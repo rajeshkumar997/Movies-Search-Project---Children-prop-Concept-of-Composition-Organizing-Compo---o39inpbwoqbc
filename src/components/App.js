@@ -6,9 +6,13 @@ const App = () => {
     const [inputValue, setInputValue] = useState("");
     const [results, setResult] = useState(null);
 
-    function handleClick(e) {}
+    function handleClick(e) {
+        setInputValue(e.target.value);
+    }
 
-    function handleChange(e) {}
+    function handleChange(e) {
+        setResult(e.target.value);
+    }
 
     return (
         <div id="main">
